@@ -1,0 +1,35 @@
+%----------------------------------------------------------------
+%
+%  File    :  thesis-style.tex
+%
+%  Author  :  Keith Andrews, IICM, TU Graz, Austria
+% 
+%  Created :  27 May 93
+% 
+%  Changed :  19 Feb 2004
+% 
+% styling and technical implementation adopted 2011 by Karl Voit
+%----------------------------------------------------------------
+
+%% defined an anvironment for the style Keith used to use:
+\newenvironment{mykeithtabbing}[1]{%%
+\begin{tabular}{lp{0.9\hsize}}
+}{%%
+\end{tabular}
+}
+
+\newcommand{\mybadgood}[2]{%%
+\begin{mykeithtabbing}
+{}\emph{Bad:}  & \sout{#1}  \\
+\emph{Good:}   & #2  \\
+\end{mykeithtabbing}
+
+}
+
+\chapter{Introduction}
+\label{chap:Style}
+\section{Motivation and Problem Statement}
+\section{Thesis Contribution}
+\section{Thesis Outline}
+
+
